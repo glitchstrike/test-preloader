@@ -1,0 +1,206 @@
+.Loader{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.square{
+    background: orange;
+    height: 30px;
+    width: 30px;
+    border-radius: 10%;
+    animation: spin 2s ease infinite alternate;
+    /* animation: split 2s ease infinite; */
+    border-top-color:transparent ;
+    border-bottom-color:transparent ;
+} 
+
+.one{
+    position: absolute;
+    top: 48%;
+    left: 48.2%;
+    background-color: orangered;
+    height: 30px;
+    width: 30px;
+    animation: split-1 2s infinite alternate;
+}
+
+.two{
+    position: absolute;
+    top: 48%;
+    left: 50.5%;
+    background-color: blue;
+    height: 30px;
+    width: 30px;
+    animation: split-2 2s infinite alternate;
+}
+
+.three{
+    position: absolute;
+    top: 48%;
+    left: 52.8%;
+    background-color:green ;
+    height: 30px;
+    width: 30px;
+    animation: split-3 2s infinite alternate;
+}
+
+.four{
+    position: absolute;
+    top: 53%;
+    left: 48.2%;
+    background-color: green;
+    height: 30px;
+    width: 30px;
+    animation: split-4 2s infinite alternate;
+}
+
+.five{
+    position: absolute;
+    top: 53%;
+    left: 50.5%;
+    background-color: whitesmoke;
+    height: 30px;
+    width: 30px;
+    animation: split-5 2s infinite alternate;
+}
+
+.six{
+    position: absolute;
+    top: 53%;
+    left: 52.8%;
+    background-color: darkorange;
+    height: 30px;
+    width: 30px;
+    animation: split-6 2s infinite alternate;
+}
+
+.seven{
+    position: absolute;
+    top: 58%;
+    left: 48.2%;
+    background-color: whitesmoke;
+    height: 30px;
+    width: 30px;
+    animation: split-7 2s infinite alternate;
+}
+
+.eight{
+    position: absolute;
+    top: 58%;
+    left: 50.5%;
+    background-color: red;
+    height: 30px;
+    width: 30px;
+    animation: split-8 2s infinite alternate;
+}
+
+.nine{
+    position: absolute;
+    top: 58%;
+    left: 52.8%;
+    background-color: yellow;
+    height: 30px;
+    width: 30px;
+    animation: split-9 2s infinite alternate;
+}
+
+
+ @keyframes spin{
+    from{
+       transform: rotate(0deg) scale(1);
+    }
+    to{
+       transform: rotate(70deg) scale(2);
+    }
+}
+
+@keyframes split-1{
+    from{
+       transform: translate(0px);background: red;width: 30px;height: 30px;
+    }
+    to{
+       transform:  translateX(-250px) translateY(-250px) rotate(360deg);background: yellow;width: 90px;height: 90px;border-radius: 50%;
+    }
+}
+
+@keyframes split-2{
+    from{
+       transform: translate(0px);background: green;width: 30px;height: 30px;
+    }
+    to{
+       transform: translateY(-250px) rotate(360deg);background: lightgreen;width: 90px;width: 90px;border-radius: 50%;
+    }
+}
+
+@keyframes split-3{
+    from{
+       transform: translate(0px);background: blue;width: 30px;height: 30px;
+    }
+    to{
+       transform: translateX(250px) translateY(-250px) rotate(360deg);background: lightblue;width: 90px;height: 90px;border-radius: 50%;
+    }
+}
+
+@keyframes split-4{
+    from{
+       transform: translate(0px);background: darkgreen;width: 30px;height: 30px;
+    }
+    to{
+       transform: translateX(-250px) translateY(-10px) rotate(360deg);background: lightgreen;width: 90px;width: 90px;border-radius: 50%;
+    }
+}
+
+@keyframes split-5{
+    from{
+       background: white;width: 30px;height: 30px;
+    }
+    to{
+       transform:  rotate(360deg);background: lightgoldenrodyellow;width: 90px;height: 90px;border-radius: 50%;
+    }
+}
+
+ @keyframes split-6{
+    from{
+       transform: translate(0px);background: darkgreen;width: 30px;height: 30px;
+    }
+    to{
+       transform: translateX(250px) translateY(-10px) rotate(360deg);background: lightgreen;width: 90px;width: 90px;border-radius: 50%;
+    }
+}
+
+@keyframes split-7{
+    from{
+       transform: translate(0px);background: blue;width: 30px;width: 30px;
+    }
+    to{
+       transform: translateX(-250px) translateY(220px) rotate(360deg);background: lightsalmon;width: 90px;height: 90px;border-radius: 50%;
+    }
+}
+
+@keyframes split-8{
+    from{
+       transform: translate(0px);background: darkgreen;width: 30px;height: 30px;
+    }
+    to{
+       transform: translateY(220px) rotate(360deg);background: lightgreen;width: 90px;width: 90px;border-radius: 50%;
+    }
+}  
+
+@keyframes split-9{
+    from{
+       transform: translate(0px);background: white;width: 30px;height: 30px;
+    }
+    to{
+       transform: translateX(250px) translateY(220px) rotate(360deg);background: lightsteelblue;width: 90px;height: 90px;border-radius: 50%;
+    }
+}
